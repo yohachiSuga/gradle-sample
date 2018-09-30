@@ -6,7 +6,7 @@ pipeline:
                 # コマンド一覧
                 commands:
                         - ./gradlew hello
-        gradle-clean:
+        gradle-hello:
                 image: openjdk
                 commands:
-                        - ./gradlew clean
+                        - ./gradlew hello

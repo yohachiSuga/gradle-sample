@@ -1,5 +1,12 @@
 pipeline:
+        # ステップは順に実行
         gradle-sample:
+                # ステップごとにベースとなるdockerイメージを指定
                 image: openjdk
+                # コマンド一覧
                 commands:
                         - ./gradlew hello
+        gradle-clean:
+                image: openjdk
+                commands:
+                        - ./gradlew clean

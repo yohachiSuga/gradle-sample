@@ -1,0 +1,4 @@
+build:
+        image: java:8u91-jre
+        commands:
+                - ./gradlew hello
